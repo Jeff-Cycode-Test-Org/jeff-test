@@ -1,2 +1,2 @@
 password = $PASSWORD
-password ='dfkjdfj%6@fJeffaalpor!8'
+password ='dfkjdfj%6@fJeffaalpor@'
