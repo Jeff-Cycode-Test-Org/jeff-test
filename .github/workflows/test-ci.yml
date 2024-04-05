@@ -22,5 +22,5 @@ jobs:
       - name: Connect to Google
         run: curl google.com
 
-      - name: Connect to Amazon
+      - name: Connect to Amazon Failure
         run: curl amazon.com
