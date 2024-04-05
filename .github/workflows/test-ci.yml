@@ -1,0 +1,20 @@
+name: Test CI
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Connect to Cycode
+        run: curl cycode.com
+
+      - name: Connect to Google
+        run: curl google.com
+
+      - name: Connect to Amazon
+        run: curl amazon.com
