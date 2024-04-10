@@ -1,3 +1,3 @@
 password = $PASSWORD
-password = "Xfjh45!nmBK3&"
+password = "Xfjh45@nmBK3&"
 
