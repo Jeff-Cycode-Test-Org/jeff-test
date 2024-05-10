@@ -1,2 +1,2 @@
-password = 'fjdkf7GG@9ikDF5!nmfkj'
+password = 'fjdkf7GG@9ikDF5!nmbkj'
 This is just a line of text
