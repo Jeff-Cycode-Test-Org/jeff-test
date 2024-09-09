@@ -1,0 +1,9 @@
+rules:
+  - id: use-unity-framework-input
+    languages:
+      - csharp
+    severity: INFO
+    message: Use of Unity function call
+    pattern-either:
+      - pattern: UnityEngine.Input.GetTouch(...)
+      - pattern: UnityEngine.Input.GetKeyUp(...)
