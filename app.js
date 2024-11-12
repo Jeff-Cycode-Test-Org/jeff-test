@@ -74,10 +74,12 @@ const authenticateJWT = (req, res, next) => {
   }
 };
 // XSS Vulnerability in /api/data API (with JWT authentication)
+const DOMPurify = require('dompurify');
 app.post('/api/data', authenticateJWT, (req, res) => {
   const { inputData } = req.body;
-  // XSS vulnerability: No sanitization of user input
-  const responseData = `<div>User Input: ${inputData}</div>`;
+  // Sanitize user input to prevent XSS vulnerability
+  const sanitizedInputData = DOMPurify.sanitize(inputData);
+  const responseData = `<div>User Input: ${sanitizedInputData}</div>`;
   // Send a 200 OK status code and the response
   res.status(200).send({
     message: 'Request was successful!',
